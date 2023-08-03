@@ -3,46 +3,41 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>My Portfolio - Nick Dallier</title>
+    <title>My Portfolio | Nick Dallier</title>
     <link href="https://fonts.cdnfonts.com/css/tisa-sans-pro" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="myWebsite.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/98b177b3ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="root">
-        <div class="header">
-            <h1>Nick Dallier</h1>
-            <nav>
-                <ul>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <!-- <button><a href="https://www.linkedin.com/in/nick-dallier-82a616277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button> -->
-            </nav>
-        </div>   
-        <div class="content">
-            <main>
-                <section class="hero">
-                    <img src="/resources/images/creative_lightbulb.avif" />
-                    <h2>Creativity Is My Passion</h2>
-                </section>
-                <section class="about-me" id="aboutMe">
-                    <img class="circle-portfolio" src="/resources/images/Nick_Dallier.jpg"/>
-                    <h2>About me</h2>
-                    <p>Hi, my name is Nick Dallier. I'm a web developer currently based in London, ON. I enjoy collaborating with teams to help bring websites to life!</p>
-                </section>
-                <section class="experience" id="experience">
-                    <h1>Experience Here</h1>
-                </section>
-                <section class="contact" id="contact">
-                    <h1>Contact Info Here</h1>
-                </section>
-            </main>
-            <footer>
-                <p>My Portfolio - Nick Dallier</p>
-            </footer>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <p class="logo"><a href="#top">Nick Dallier</a></p>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- <button><a href="https://www.linkedin.com/in/nick-dallier-82a616277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button> -->
+        </nav>
+    </header>   
+    <main>
+        <section class="hero">
+            <img src="/resources/images/creative_lightbulb.avif" />
+            <h1>Creativity Is My Passion</h1>
+        </section>
+        <section class="about-me" id="aboutMe">
+            <img class="circle-portfolio" src="/resources/images/Nick_Dallier.jpg"/>
+            <div class="about-me-text-container">
+                <h2>Hi, I'm Nick Dallier</h2>
+                <p>I'm a web developer from London, ON with 7+ years of experience. I enjoy collaborating with teams to help bring ideas to life!<br />My hobbies include playing guitar, creating & editing videos, and occasionally writing songs.</p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact Info Here</h1>
+        </section>
+    </main>
+    <footer>
+        <p>© Nick Dallier</p>
+    </footer>
 </body>
 </html>
