@@ -1,0 +1,120 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #072140;
+    color: #fff;
+    margin: 0px;
+}
+
+.root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+    background-color: #072140;
+    width: 100%;
+    font-family: 'Tisa Sans Pro', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    top: 0px;
+    align-items: center;
+    color: #fff;
+    max-height: 8vh;
+    padding: 1%;
+}
+
+.header > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+}
+
+nav {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    padding-right: 10vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.5;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 4rem;
+    width: 100%;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 5%;
+}
+
+
+.circle-portfolio {
+    border-radius: 50%;
+    max-width: 75%;
+}
+
+
+.about-me h2 {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.about-me p {
+    align-self: center;
+    font-size: 1.25em;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-height: 10vh;
+    padding: 20px;
+    border-top: 1px solid #ffffff;
+    justify-content: center;
+}
