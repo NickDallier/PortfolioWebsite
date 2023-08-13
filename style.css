@@ -18,7 +18,6 @@ header {
     top: 0px;
     align-items: center;
     color: #fff;
-    max-height: 8vh;
     padding-bottom: 5px;
     position: sticky;
     background-color: #15171e;
@@ -72,17 +71,36 @@ nav ul li a {
 nav ul li a:hover {
     cursor: pointer;
     font-size: 1.1em;
-    transition: font-size 0.5s;
+    transition: font-size 0.25s;
     background-color: #1a1c23;
     padding: 15px;
     border-radius: 3px;
+}
+
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #2A2E3C; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#topBtn:hover {
+  background-color: #555; 
 }
 
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 0px 50px;
 }
 
 .hero {
@@ -104,13 +122,11 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    font-size: 4rem;
     width: 100%;
 }
 
-.about-me {
+.about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     padding-top: 2%;
     padding-bottom: 2%;
     justify-items: center;
@@ -121,11 +137,14 @@ main {
 
 .circle-portfolio {
     border-radius: 50%;
-    max-width: 65%;
+}
+
+.about-me-text-container {
+    display: grid;
 }
 
 
-.about-me h2 {
+.about h2 {
     text-align: center;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -134,14 +153,43 @@ main {
     letter-spacing: 0.02em;
 }
 
-.about-me p {
+.about p {
     align-self: center;
-    font-size: 1.25em;
     grid-column-start: 2;
     grid-row-start: 1;
     line-height: 1.6em;
     color: rgb(255, 255, 255, 0.72);
     font-family: Noto Sans, Helvetica, Arial, sans-serif;
+}
+
+.contact {
+    display: grid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-items: center;
+    margin-top: 1%;
+    /*background-color: #1a1c23;*/
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.02em;
+}
+
+.contact p {
+    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+    margin: 0.5em;
+}
+
+.contact a {
+    color: inherit;
+}
+
+.contact i {
+    font-size: 4rem;
 }
 
 footer {
@@ -152,4 +200,148 @@ footer {
     border-top: 1px solid #ffffff;
     justify-content: center;
     max-height: 4vh;
+}
+
+@media only screen and (min-width: 1px) {
+    header {
+        margin: 5px;
+    }
+    
+    main {
+        margin: 0px 5px
+    }
+    
+    nav {
+        display: block;
+        text-align: center;
+        padding: 2px;
+    }
+    
+    nav ul {
+        padding: 3% 0 0 0;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .about p {
+        grid-column-start: none;
+        grid-row-start: none;
+        margin: 2%;
+    }
+    
+    .circle-portfolio {
+        max-width: 25%;
+    }
+    
+    .about {
+        grid-template-columns: 1fr;
+    }
+    
+    .about h2 {
+        font-size: 1.25rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    main {
+        margin: 0px 50px;
+    }
+    
+    header {
+        margin: 0px 50px;
+        max-height: 8vh;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1em 0;
+        width: 100%;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .about p {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    
+    .circle-portfolio {
+        max-width: 65%;
+    }
+    
+    .about {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .about h2 {
+        font-size: 1.25rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .about h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .about h2 {
+        font-size: 3rem;
+    }
+    
+    .contact h2 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.25em;
+    }
 }

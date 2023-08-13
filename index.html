@@ -2,11 +2,11 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
     <title>My Portfolio | Nick Dallier</title>
     <link href="https://fonts.cdnfonts.com/css/tisa-sans-pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/98b177b3ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,15 +17,15 @@
                 <li><a href="#aboutMe">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <!-- <button><a href="https://www.linkedin.com/in/nick-dallier-82a616277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button> -->
         </nav>
     </header>   
     <main>
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
         <section class="hero">
             <img src="/resources/images/creative_lightbulb.avif" />
             <h1>Creativity Is My Passion</h1>
         </section>
-        <section class="about-me" id="aboutMe">
+        <section class="about" id="aboutMe">
             <img class="circle-portfolio" src="/resources/images/Nick_Dallier.jpg"/>
             <div class="about-me-text-container">
                 <h2>Hi, I'm Nick Dallier</h2>
@@ -33,7 +33,11 @@
             </div>
         </section>
         <section class="contact" id="contact">
-            <h1>Contact Info Here</h1>
+            <h2>Contact Me</h2>
+            <p>You can send me an email at <a href="mailto:nickdallier@gmail.com">nickdallier@gmail.com</a></p>
+            <p>Or</p>
+            <p>Send me a message on LinkedIn by clicking the icon below!</p>
+            <a href="https://www.linkedin.com/in/nick-dallier-82a616277/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </section>
     </main>
     <footer>
